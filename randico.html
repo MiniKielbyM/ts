@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>randico demo 1</title>
+  <script src="./libs/RandIco.js"></script>
+</head>
+<style>
+  canvas{
+    position: absolute;
+  }
+</style>
+<body>
+  <canvas
+    style="width: 20cqw; height: 20cqw; background-color: black"
+    id="tst"
+  ></canvas>
+  <script>
+    const randicon = new RandIco();
+    function test() {
+        randicon.setTarget(document.getElementById("tst"));
+        randicon.draw(true);
+        randicon.setSeed("qwertyuiopasdfghjklzxcvbnmqwkjdnhfourhfo")
+    }
+
+  </script>
+</body>
+<button style="margin-top: 25cqw;" onclick="test();">test</button>

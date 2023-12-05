@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+    <script src="./libs/Cards.js"></script>
+</head>
+
+<body>
+    <script>
+        const Cards = new CardLib();
+        function test() {
+            document.getElementById("card").innerText += Cards.drawCard() + "\n";
+        }
+        function shufflenew() {
+            Cards.shuffleNew();
+        }
+    </script>
+    <button onclick="test()">draw card</button>
+    <button onclick="shufflenew()">shuffle new</button>
+    <hr />
+    <p id="card"></p>
+    <p id="deck"></p>
+</body>
+
+</html>
